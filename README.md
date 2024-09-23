@@ -14,4 +14,3 @@
    ansible-playbook -i hosts create_user_and_add_ssh_key.yml -u user1
    ```
    где `user1` — специальный юзер для входа.
-```
