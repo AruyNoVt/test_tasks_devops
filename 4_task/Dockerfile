@@ -13,10 +13,10 @@ WORKDIR /var/www/html
 COPY . .
 
 USER root
-ARG STATIC_VERSION 
-ARG STATIC_STAGING
-ENV STATIC_STAGING=${STATIC_STAGING}
-ENV STATIC_VERSION=${STATIC_VERSION}
+ARG STATIC_VERSION \
+STATIC_STAGING
+ENV STATIC_STAGING=${STATIC_STAGING} \
+STATIC_VERSION=${STATIC_VERSION}
 
 RUN curl -L -O "https://artifactory.com/artifactory/project_repo/${STATIC_STAGING}/project-${STATIC_VERSION}.tar.gz" && \
     tar -xzf project-${STATIC_VERSION}.tar.gz ./build/static --strip-components 2 && \
