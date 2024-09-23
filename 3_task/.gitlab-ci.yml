@@ -1,0 +1,31 @@
+stages:
+  - build
+  - docker-build
+  - deploy
+
+build:
+  stage: build
+  image: openjdk:17-jdk
+  script:
+    - echo "Сборка класса Java..."
+    - javac HelloWorld.java 
+  artifacts:
+    paths:
+      - HelloWorld.class
+
+docker-build:
+  stage: docker-build
+  image: docker:latest
+  services:
+    - docker:dind
+  script:
+    - echo "Сборка Docker образа..."
+    - docker build -t hello-world-app .
+  only:
+    - main
+
+deploy:
+  stage: deploy
+  script:
+    - echo "Начинаем развертывать..."
+    - docker push hello-world-app
