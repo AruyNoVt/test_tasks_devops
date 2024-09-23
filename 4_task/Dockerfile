@@ -10,14 +10,7 @@ RUN apt-get update && apt-get install -y \
 
 WORKDIR /var/www/html
 
-COPY bin ./bin
-COPY config ./config
-COPY src ./src
-COPY templates ./templates
-COPY tests ./tests
-COPY var ./var
-COPY webroot ./webroot
-COPY composer.json composer.lock phpunit.xml.dist ./
+COPY bin config src templates tests var webroot composer.json composer.lock phpunit.xml.dist ./
 
 USER root
 ARG STATIC_VERSION 
