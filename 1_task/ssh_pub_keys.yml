@@ -1,0 +1,7 @@
+   users:
+     - username: user_test
+       ssh_public_key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDCQqOIXfaITJresjKIiUMm1L5btqePlM8NB4WqNjcUy2gubXzj04FFpmMHPzp2+Ybd69DzrSoBcWjj0uCYiMzbazIB2wQdxwIWkPLCtqGCZDX9m6rqAFicWJXgkpNg0UYtdG42Km2fdqG0oGEnk9bE8loFtyoisAABu5f+xDInzDVx0kbxqYu34ucSlZl6BTkGkwUUKBVqdF5JuBsqHSilKQgTFzEB5n0u4DiWBy0HbIrKZ1/GJBtsuCm04Bajm1HGOvrDoiZjd3dFAM/Vwx46yTaGTXupZvsyhHn2Wk6o8LTqHnw82JOSjNBfn8Oi0zkfTbECLsgNLTchWkcE8U78z5I2MizjbaR7Zyx8maTzZOgoa96FzKU93+tiW/X22J3l1Od4KWKNX7mrqK3JTMsTmzckxOSCvHaEsQdtNTv6VygxjF8iVlv7V7YieLuJEq2tbL+3HHC4eaEy0zv0q0dilo8ngmP1J8/+tKyZ81MmfvLSdP7m8rcJJUg6Rx/2NK6MBwUQNJEDkL+bU5+kh0ThJbalL6q6DGF7QDxx6fu8G+Fj1mbmiYs9rxkUGzAWswiSF+2Y/b9chbMSg6Ysih8/qi8SJpyM7BNlPB80ffsADKVC5uDR56oHwWAx4/bRcoS5qKGGRGFMCYA7Wf50dnRPc394dSyxE9vWx+BYCQmxyQ== mail@example.ru"
+     - username: user_another
+       ssh_public_key: "ssh-rsa..."
+   
+
