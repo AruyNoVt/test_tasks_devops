@@ -1,0 +1,26 @@
+image: docker:latest
+
+services:
+  - docker:dind
+
+stages:
+  - build
+  - test
+  - deploy
+
+build_image:
+  stage: build
+  script:
+    - echo "Сборка Docker образа..."
+    - docker build -t ANYAPP:latest .
+
+run_tests:
+  stage: test
+  script:
+    - echo "Запуск тестов..."
+    - docker run --rm ANYAPP:latest npm test
+
+deploy:
+  stage: deploy
+  script:
+    - echo "Начинаем развертывать..."
