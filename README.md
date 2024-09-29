@@ -12,7 +12,7 @@
 
 3. Создал playbook, в котором предварительно необходимо указывать логин нового юзера, который из YAML-файла с публичными ключами вытащит публичный ключ и зальёт его на соответствующие серверы. Запустить можно командой:
    ```bash
-   ansible-playbook -i hosts create_user_and_add_ssh_key.yml -u user1
+   ansible-playbook -i hosts playbook_ansible_create_user_and_copy_ssh -u user1
    ```
    где `user1` — специальный юзер для входа.
    
